@@ -1,0 +1,39 @@
+h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.cat-banner {
+    width: 100%;
+    height: 100px;
+    background: url('cat.gif') repeat-x;
+    background-size: 100px 100px;
+    animation: moveCatBanner 5s linear infinite;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+iframe {
+    width: 800px;
+    height: 450px;
+}
+
+@keyframes moveCatBanner {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
